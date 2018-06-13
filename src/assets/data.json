@@ -4,11 +4,23 @@
       "text":"Pitch perfect",
       "todos":[  
          {  
-            "text":"itemaaa",
+            "text":"Goede pitches kennen",
             "checked":false
          },
          {  
-            "text":"item2",
+            "text":"Voorbeelden van pitches noemen",
+            "checked":false
+         },
+         {  
+            "text":"Uitleggen wat een pitch inhoud",
+            "checked":false
+         },
+         {  
+            "text":"Eigen kwaliteiten noemen",
+            "checked":false
+         },
+         {  
+            "text":"Video's van eigen pitches",
             "checked":false
          }
       ]
@@ -18,11 +30,23 @@
       "text":"Het managen van een project",
       "todos":[  
          {  
-            "text":"bbb",
+            "text":"Debriefing maken",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Samenwerkingscontract opstellen",
+            "checked":false
+         },
+         {  
+            "text":"Planning bijhouden",
+            "checked":false
+         },
+         {  
+            "text":"Overleg met opdrachgever vastleggen",
+            "checked":false
+         },
+         {  
+            "text":"Risico's in kaart brengen",
             "checked":false
          }
       ]
@@ -32,11 +56,27 @@
       "text":"De inhoud van het product",
       "todos":[  
          {  
-            "text":"bbb",
+            "text":"Content afstemmen op doelgroep",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Doelgroep omschrijven",
+            "checked":false
+         },
+         {  
+            "text":"Visuals",
+            "checked":false
+         },
+         {  
+            "text":"Foutloze teksten",
+            "checked":false
+         },
+         {  
+            "text":"Interactie ontwerp maken",
+            "checked":false
+         },
+         {  
+            "text":"Styleguide maken",
             "checked":false
          }
       ]
@@ -45,12 +85,32 @@
       "title":"Doelgroep Block",
       "text":"lHet kennen van de doelgroep",
       "todos":[  
-         {  
-            "text":"bbb",
+        {  
+            "text":"Interview afleggen",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Doelgroep onderzoek doen",
+            "checked":false
+         },
+         {  
+            "text":"Persona's maken",
+            "checked":false
+         },
+         {  
+            "text":"Customer journey",
+            "checked":false
+         },
+         {  
+            "text":"Testopzet maken",
+            "checked":false
+         },
+         {  
+            "text":"Black box test doen",
+            "checked":false
+         },
+         {  
+            "text":"Data analyseren",
             "checked":false
          }
       ]
@@ -59,26 +119,32 @@
       "title":"Concepten Block",
       "text":"Passende oplossing bedenken voor een praktisch vraagstuk",
       "todos":[  
-         {  
-            "text":"bbb",
+        {  
+            "text":"User stories maken",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
-            "checked":false
-         }
-      ]
-   },
-   {  
-      "title":"Interactie Ontwerpen Block",
-      "text":"lOntwerpen van de interactie tussen mens en machine",
-      "todos":[  
-         {  
-            "text":"bbb",
+            "text":"Requirements vaststellen",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Wireframes maken",
+            "checked":false
+         },
+         {  
+            "text":"Creatieve sessie begeleiden",
+            "checked":false
+         },
+         {  
+            "text":"Rapid prototypen",
+            "checked":false
+         },
+         {  
+            "text":"Concept ontwikkelen",
+            "checked":false
+         },
+         {  
+            "text":"Document opleveren",
             "checked":false
          }
       ]
@@ -87,12 +153,66 @@
       "title":"Oplever Block",
       "text":"Het opleveren van een product",
       "todos":[  
-         {  
-            "text":"itemaaa",
+        {  
+            "text":"Code voorzien van comments",
             "checked":false
          },
          {  
-            "text":"item2",
+            "text":"User stories maken",
+            "checked":false
+         },
+         {  
+            "text":"Meetbare requirements opstellen",
+            "checked":false
+         },
+         {  
+            "text":"Logische code + comments",
+            "checked":false
+         },
+         {  
+            "text":"Versiebeheer + team + branches",
+            "checked":false
+         },
+         {  
+            "text":"Mappenstructuur",
+            "checked":false
+         },
+         {  
+            "text":"Handleiding",
+            "checked":false
+         }
+      ]
+   },
+   {  
+      "title":"Interactie Ontwerpen Block",
+      "text":"lOntwerpen van de interactie tussen mens en machine",
+      "todos":[  
+        {  
+            "text":"User stories maken",
+            "checked":false
+         },
+         {  
+            "text":"Requirements vaststellen",
+            "checked":false
+         },
+         {  
+            "text":"Wireframes maken",
+            "checked":false
+         },
+         {  
+            "text":"Creatieve sessie begeleiden",
+            "checked":false
+         },
+         {  
+            "text":"Rapid prototypen",
+            "checked":false
+         },
+         {  
+            "text":"Concept ontwikkelen",
+            "checked":false
+         },
+         {  
+            "text":"Document opleveren",
             "checked":false
          }
       ]
@@ -102,11 +222,31 @@
       "text":"Het ontwerpen en ontwikkelen van een server side applicatie",
       "todos":[  
          {  
-            "text":"bbb",
+            "text":"ERD maken",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Library gebruiken",
+            "checked":false
+         },
+         {  
+            "text":"Database gebruiken",
+            "checked":false
+         },
+         {  
+            "text":"CRUD functionaliteiten",
+            "checked":false
+         },
+         {  
+            "text":"API gebruiken",
+            "checked":false
+         },
+         {  
+            "text":"Inlog systeem",
+            "checked":false
+         },
+         {  
+            "text":"Form validatie",
             "checked":false
          }
       ]
@@ -115,12 +255,28 @@
       "title":"Front-end Block",
       "text":"Ontwikkelen van een front-end interface",
       "todos":[  
-         {  
-            "text":"bbb",
+        {  
+            "text":"Kennis van HTML5",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Front-end website maken",
+            "checked":false
+         },
+         {  
+            "text":"Kennis van css",
+            "checked":false
+         },
+         {  
+            "text":"Responsive website",
+            "checked":false
+         },
+         {  
+            "text":"Interactie met JavaScript",
+            "checked":false
+         },
+         {  
+            "text":"Form validatie",
             "checked":false
          }
       ]
@@ -130,11 +286,19 @@
       "text":"Verdere verdieping in een technisch thema",
       "todos":[  
          {  
-            "text":"bbb",
+            "text":"Onderzoek naar frameworks",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"4 Frameworks uitzoeken",
+            "checked":false
+         },
+         {  
+            "text":"Product uigebreid uitwerken",
+            "checked":false
+         },
+         {  
+            "text":"Tutorial blogpost maken",
             "checked":false
          }
       ]
@@ -143,12 +307,32 @@
       "title":"One of a Kind Block",
       "text":"Je kent je branche en erbinnen ben je actief",
       "todos":[  
-         {  
-            "text":"bbb",
+        {  
+            "text":"Kwaliteiten opnoemen",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Event bezoeken",
+            "checked":false
+         },
+         {  
+            "text":"Netwerk verbreden",
+            "checked":false
+         },
+         {  
+            "text":"Superheld omschrijven",
+            "checked":false
+         },
+         {  
+            "text":"Online presence",
+            "checked":false
+         },
+         {  
+            "text":"Actief op GitHub",
+            "checked":false
+         },
+         {  
+            "text":"Linkedin aanmaken",
             "checked":false
          }
       ]
@@ -158,11 +342,31 @@
       "text":"Sector verdieping",
       "todos":[  
          {  
-            "text":"bbb",
+            "text":"Sector kiezen",
             "checked":false
          },
          {  
-            "text":"itemaaaa2",
+            "text":"Verdiepen in onderwerp",
+            "checked":false
+         },
+         {  
+            "text":"Blogs schrijven",
+            "checked":false
+         },
+         {  
+            "text":"Event bezoeken",
+            "checked":false
+         },
+         {  
+            "text":"Onderzoek doen",
+            "checked":false
+         },
+         {  
+            "text":"Artikel publiceren",
+            "checked":false
+         },
+         {  
+            "text":"Gesprek met expert",
             "checked":false
          }
       ]
