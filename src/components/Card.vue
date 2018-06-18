@@ -47,6 +47,14 @@
                 completed: false,
             }
         },
+        created: function() {
+            let data = localStorage.getItem(this.title)
+            if (data){
+                let object = JSON.parse(data)
+                this.items = object
+            }
+            
+        },
         methods:{
             addItem: function(e){
                 if(this.newItem.text)
@@ -59,6 +67,9 @@
             },
             deleteitem: function(item){
                 this.items.splice(this.items.indexOf(item), 1)
+            },
+            save: function(){
+                localStorage.setItem(this.title, JSON.stringify(this.items))
             }
         },
         watch: {
@@ -70,6 +81,8 @@
                     })
 
                    this.completed = vals
+
+                   this.save()
                 },
                 deep: true
             }

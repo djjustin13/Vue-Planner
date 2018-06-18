@@ -35,10 +35,11 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
     mode: 'history',
-    base: __dirname,
+    base: __dirname+"/vue-planner/",
     routes:[
+        {path:'/vue-planner', component: Cards},
         {path:'/', component: Cards},
-        {path:'/test', component:Test}
+        // {path:'/test', component:Test}
     ]
 })
 
