@@ -16,9 +16,7 @@
                 </ul>
             </div>
             <div class="card-footer white" :class="{'success-color': completed}">
-                <!-- Default input -->
                 <h5 class="white-text card-footer-text" v-if="completed"><i class="fas fa-check"></i> Gehaald</h5>
-                <!-- <p class="white-text card-text" v-if="completed"><i class="fas fa-check"></i> Gehaald</p> -->
                 <input v-else @keyup.enter="addItem" type="text" v-model="newItem.text" class="form-control" placeholder="Voeg item toe">
             </div>
         </div>
