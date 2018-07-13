@@ -1,7 +1,10 @@
 <template>
-    <div class="col-md-4 block">
+    <div class="col-md-6 col-lg-4 block">
         <div class="card">
             <div class="card-body">
+                <div class="buttons float-right">
+                    <i class="fas fa-undo-alt resetButton" @click="resetData"></i>
+                </div>
                 <h4 class="card-title">{{title}}</h4>
                 <p class="card-text">{{text}}</p>
 
@@ -46,10 +49,11 @@
             }
         },
         created: function() {
-            let data = localStorage.getItem(this.title)
+            localStorage.setItem("original_"+this.title, JSON.stringify(this.items));
+            let data = localStorage.getItem(this.title);
             if (data){
-                let object = JSON.parse(data)
-                this.items = object
+                let object = JSON.parse(data);
+                this.items = object;
             }
             
         },
@@ -64,11 +68,17 @@
                 e.preventDefault();
             },
             deleteitem: function(item){
-                this.items.splice(this.items.indexOf(item), 1)
+                this.items.splice(this.items.indexOf(item), 1);
             },
             save: function(){
-                localStorage.setItem(this.title, JSON.stringify(this.items))
+                localStorage.setItem(this.title, JSON.stringify(this.items));
+            },
+            resetData: function(){
+                let data = localStorage.getItem("original_"+this.title);
+                let object = JSON.parse(data);
+                this.items = object;
             }
+            
         },
         watch: {
             items: {
@@ -98,6 +108,15 @@
     }
     .card{
         transition: box-shadow .25s;
+    }
+
+    .resetButton{
+        color:rgb(170, 170, 170);
+    }
+
+    .resetButton:hover{
+       color:rgb(134, 134, 134);
+       transform: scale(1.1, 1.1);
     }
 
     .card-footer-text{

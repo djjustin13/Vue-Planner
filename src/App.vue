@@ -2,11 +2,11 @@
     <div class="page">
         <nav class="navbar navbar-expand-lg navbar-dark hr-color">
             <a class="navbar-brand" href="#">Building block To-do's</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <router-link class="nav-link" to="/">Home</router-link>
@@ -15,11 +15,16 @@
                         <router-link class="nav-link" to="/test">Test</router-link>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </nav>
         <div class="container main">
             <router-view></router-view>
         </div>
+        <footer class="page-footer font-small hr-color">
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="#"> Justin de Ruiter</a>
+            </div>
+        </footer>
     </div>
 </template>
 
@@ -35,7 +40,7 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
     mode: 'history',
-    base: __dirname+"/vue-planner/",
+    base: __dirname,
     routes:[
         {path:'/vue-planner', component: Cards},
         {path:'/', component: Cards},
