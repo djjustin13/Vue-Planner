@@ -3,13 +3,13 @@
         <div class="card">
             <div class="card-body">
                 <div class="buttons float-right">
-                    <i class="fas fa-undo-alt resetButton" @click="resetData"></i>
+                    <i class="fas fa-undo-alt icon" @click="resetData"></i>
                 </div>
                 <h4 class="card-title">{{title}}</h4>
                 <p class="card-text">{{text}}</p>
 
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item" v-for="(todo, index) in items" :key="`todo-${index}`" >
+                    <li class="list-group-item" v-for="(todo, index) in items" :key="`todo-${index}`" :class="[todo.category]">
                         <input type="checkbox" class="toggle" v-model="todo.checked">
                         <span :class="{checked: todo.checked}">
                             {{todo.text}}
@@ -45,7 +45,7 @@
         },data(){
             return{
                 newItem:{},
-                completed: false,
+                completed: false
             }
         },
         created: function() {
@@ -62,7 +62,8 @@
                 if(this.newItem.text)
                 this.items.push({
                     text: this.newItem.text,
-                    checked: false
+                    checked: false,
+                    category: 'default'
                 });
                 this.newItem = {}
                 e.preventDefault();
@@ -99,24 +100,12 @@
 </script>
 
 <style scoped>
-    .block{
-        padding: 0.75rem;
-    }
     .checked{
         text-decoration: line-through;
 
     }
     .card{
         transition: box-shadow .25s;
-    }
-
-    .resetButton{
-        color:rgb(170, 170, 170);
-    }
-
-    .resetButton:hover{
-       color:rgb(134, 134, 134);
-       transform: scale(1.1, 1.1);
     }
 
     .card-footer-text{
