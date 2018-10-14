@@ -8,7 +8,7 @@
                         <div class="col-md-8">
                             <h4>Update info</h4>
                             <p>
-                                We hebben gemerkt dat veel 1e jaars studenten gebruik maken van deze tool en hebben daarom een grote update uitgebracht. Omdat jouw to-do lijsten lokaal worden opgeslagen kan je nog niet direct volledig gebruik maken van deze update. Wanneer je update worden al jouw lijstjes gereset! Wanneer je nog geen lijsten in gebruik had ben je automatisch up to date. <a href="#" @click="resetAll">Update nu!</a>
+                                We hebben gemerkt dat veel 1e jaars studenten gebruik maken van deze tool en hebben daarom een grote update uitgebracht. Omdat jouw to-do lijsten lokaal worden opgeslagen kan je nog niet direct volledig gebruik maken van deze update. Wanneer je update worden al jouw lijstjes gereset! Wanneer je nog geen lijsten in gebruik had, ben je automatisch up to date. <a href="#" @click="resetAll">Update nu!</a>
                             </p>
                             <hr>
                             <h5>Legenda:</h5>
@@ -17,7 +17,7 @@
                         <div class="col-md-4">
                             <h4>Disclamer</h4>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id libero magni minima odit possimus neque mollitia, placeat dignissimos, dolorum ullam omnis ea explicabo. Consequuntur natus veritatis sapiente, excepturi maiores sed.
+                                Let op, BB-Planner is een tool ontwikkeld voor en door studenten. De standaard onderdelen op de lijsten zijn slechts een indicatie van de taken die je zou kunnen doen om je building blocks te halen. 
                             </p>
                         </div>
                     </div>
@@ -26,8 +26,9 @@
             </div>
         </div>
         <div class="row">
-        <Card v-for="(card, index) in cards" :key="`card-${index}`" :title="card.title" :text="card.text" :items="card.todos"/>
+            <Card v-for="(card, index) in cards" :key="`card-${index}`" :title="card.title" :text="card.text" :items="card.todos"/>
         </div>
+
     </div>
 
 </template>
@@ -55,7 +56,11 @@ import Card from './Card'
             }
         },
         created: function(){
-            this.cards = data
+            let vueapp = this;
+            $.getJSON('static/data.json', function(json){
+               vueapp.cards = json
+            });
+            
         }
     }
 </script>
