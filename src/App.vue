@@ -55,7 +55,7 @@
                 <hr>
                 <h5>Disclamer</h5>
                 <p>
-                    Let op, BB-Planner is een tool ontwikkeld voor en door studenten. De standaard onderdelen op de lijsten zijn slechts een indicatie van de taken die je zou kunnen doen om je building blocks te halen. 
+                    Let op, BB-Planner is een tool ontwikkeld voor en door studenten. De standaard onderdelen op de lijsten zijn slechts een indicatie van de taken die je zou kunnen doen om je building blocks te halen. Bij een assesment gaat het vooral om de beargumentatie en je totale verhaal. Zorg daarom dat je voldoende kennis hebt van het onderwerp.
                 </p>
                 <hr>
                 <h5>Feedback & vragen:</h5>

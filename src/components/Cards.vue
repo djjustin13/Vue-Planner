@@ -12,12 +12,12 @@
                             </p>
                             <hr>
                             <h5>Legenda:</h5>
-                            <span class="legende important">Extra belangrijke onderdelen</span> <span class="legende">Normale onderdelen</span> <span class="legende extra">Extra onderdelen</span>
+                            <span class="legende important">Extra belangrijke onderdelen</span> <span class="legende">Normale onderdelen</span> <span class="legende extra">Extra onderdelen (tips)</span>
                         </div>
                         <div class="col-md-4">
                             <h4>Disclamer</h4>
                             <p>
-                                Let op, BB-Planner is een tool ontwikkeld voor en door studenten. De standaard onderdelen op de lijsten zijn slechts een indicatie van de taken die je zou kunnen doen om je building blocks te halen. 
+                                Let op, BB-Planner is een tool ontwikkeld voor en door studenten. De standaard onderdelen op de lijsten zijn slechts een indicatie van de taken die je zou kunnen doen om je building blocks te halen. Bij een assesment gaat het vooral om de beargumentatie en je totale verhaal. Zorg daarom dat je voldoende kennis hebt van het onderwerp.
                             </p>
                         </div>
                     </div>
@@ -34,7 +34,6 @@
 </template>
 
 <script>
-import data from '../assets/data.json'
 import Card from './Card'
 
     export default{
